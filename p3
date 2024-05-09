@@ -1,0 +1,27 @@
+#input
+n= int(input("Enter the number of chocolates in : "))
+
+#player-1 
+def player1(choco):
+    if choco==0:
+        return -1
+    elif choco==1:
+        return 1
+    else:
+        return player2(choco-1)
+
+#player-2
+def player2(choco):
+    if choco==0:
+        return 1
+    elif choco%2==1:
+        return -1
+    else:
+        return -2
+
+#output
+winner=player1(n)
+if winner == 1:
+    print("Player-1 wins!")
+else:
+    print("Player-2 wins!")
