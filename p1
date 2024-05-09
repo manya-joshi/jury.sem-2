@@ -1,0 +1,13 @@
+#input
+num= int(input("Enter the base: "))
+pwo= int(input("Enter the exponent: "))
+
+#finding ans
+def power(base, exponent):
+    if exponent == 0:
+        return 1
+   
+    return base * power(base, exponent - 1)
+
+#output
+print(f"{num} raised to the power of {pwo} is ({num}^{pwo}) : {power(num, pwo)}")
