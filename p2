@@ -1,0 +1,33 @@
+#dictionary 
+student_info = {
+    'name': 'Manya Joshi',
+    'enrollment_no': 'AUB1043',
+    'course': 'B.Tech.',
+    'stream': 'Computer Science',
+    'year': 'FY',
+    'semesters': '1',
+}
+
+#list 
+subjects = ['ITD', 'CCT', 'EM', 'EP', 'JOM']
+
+#tuple 
+marks = (85, 90, 75, 88, 91)
+
+
+#output
+print(f"Student Name: {student_info['name']}")
+print(f"Enrollment Number: {student_info['enrollment_no']}")
+print(f"Course: {student_info['course']}")
+print(f"Stream: {student_info['stream']}")
+print(f"Year: {student_info['year']}")
+print(f"Semesters: {student_info['semesters']}")
+
+#result output
+print("\nResult:")
+for subject, mark in zip(subjects, marks):
+    print(f"{subject}: {mark}")
+    
+#finding average 
+average = sum(marks) / len(marks)
+print(f"\nAverage Marks: {average:.2f}")
